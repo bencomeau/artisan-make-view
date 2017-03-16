@@ -1,0 +1,27 @@
+{
+    "name": "bencomeau/artisan-make-view",
+    "description": "Create views, including \"resource\" views, using console commands.",
+    "keywords": ["laravel", "artisan"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ben Comeau",
+            "email": "contact@bencomeau.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "BenComeau\\ArtisanMakeView\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
