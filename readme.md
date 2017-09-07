@@ -8,9 +8,9 @@
 
 Creating views is as easy as:
 
-    php artisan make:view user.index  // creates --> resources/views/user/index.blade.php
+    php artisan make:view user  // creates --> index, create, show, edit views in the resources/views/user directory
   
-    php artisan make:view user.index  // creates --> index, create, show, edit views in the resources/views/user directory
+    php artisan make:view user.index  // creates --> resources/views/user/index.blade.php
 
 Using something other than `blade` templates?
      
