@@ -16,5 +16,12 @@
         "psr-4": {
             "BenComeau\\ArtisanMakeView\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BenComeau\\ArtisanMakeView\\ArtisanMakeViewServiceProvider"
+            ]
+        }
     }
 }

@@ -36,6 +36,8 @@ To get started, use composer to require this package:
 
 Then simply `register` the package's Service Provider in your `app/Providers/AppServiceProvider.php` file:
 
+> Note: Laravel `5.5` and above uses Package Auto-Discovery; if you are using Laravel `>= 5.5` it is not necessary to manually add the service provider as shown below.
+
     public function register()
     {
         if ($this->app->environment('local')) {
