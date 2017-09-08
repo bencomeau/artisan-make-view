@@ -39,7 +39,9 @@ class ViewMakeCommand extends Command
      * 
      * @var array
      */
-    protected $resources = ['index', 'create', 'show', 'edit'];
+    protected $resources = [
+        'index', 'create', 'show', 'edit'
+    ];
 
     /**
      * Create a new command instance.
@@ -61,8 +63,6 @@ class ViewMakeCommand extends Command
      */
     public function handle()
     {
-        $views = $this->views();
-
         foreach ((array) $this->views() as $path) {
             if ($this->fileExists($path)) continue;
 
@@ -99,6 +99,8 @@ class ViewMakeCommand extends Command
 
         if (! $this->filesystem->isDirectory($directory)) {
             $this->filesystem->makeDirectory($directory);
+
+            $this->info(sprintf('%s directory created!', basename($directory)));
         }
     }
 
@@ -111,6 +113,8 @@ class ViewMakeCommand extends Command
     protected function makeView(string $path)
     {
         $this->filesystem->put($path, '');
+
+        $this->info(sprintf('%s view created!', basename($path)));
     }
 
     /**
